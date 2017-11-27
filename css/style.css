@@ -1,10 +1,4 @@
-:root {
---var-red: #dfa123;
-
-}
-
 body {
-	
 	background-color: black;
 	padding-left:20px;
 	padding-right:20px;
@@ -12,10 +6,8 @@ body {
 	width: 1000px;
 	min-height: 1360px;
 	/* фон черты для страницы сайта*/
-
- background-color: #fff;
-background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
-
+	background-color: #fff;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
 }
 
 header {
@@ -27,22 +19,18 @@ header {
 	margin-right:0px;
 	color: #333;
 	padding:0 20px;
-
 }
 
 .head-left h1 {
-
 	font-size:24px;
 	font-family: Georgia, Tahoma, 'serif';
 	color: #000;
 }
 .head-left h2 {
-
 	font-size:12px;
 	font-family: Georgia, Tahoma, 'serif';
 	color: #000;
 }
-
 .head-right form {
 	padding:0;
 	margin-right:10px;
@@ -61,14 +49,13 @@ header {
 	margin-left: 20px;
 	color: #ffa;
 	padding-left: 10px;
-
 }
 .head-right form input:focus {
 	color: #ffa;
 	box-shadow: 0px 0px 1px rgba(255,255,255,1),
 				0px 0px 1px #2f7cc0;
 	outline:transparent;
-	/*outline:none; ? what more batter?*/
+	/*outline:none; ? what more better?*/
 }
 .head-right form a {
 	font-size: 12px;
@@ -133,57 +120,61 @@ text-decoration: underline;
 }
 
 .sub-menu div{
-	
 	margin: auto 0;
-
 }
 .sub-menu div>a {
-padding: 0 15px;
-color: black;
-text-decoration: none;
-font-size: 13px;
-
+	padding: 0 15px;
+	color: black;
+	text-decoration: none;
+	font-size: 13px;
 }
 .sub-menu div>a:hover {
- color: grey;
-
+	color: grey;
 }
-.section {
-margin:0 auto;
-min-height: 25px;
-background-color: #231f20;
+.delimiter {
+	margin:0 auto;
+	min-height: 15px;
+	background-color: #231f20;
+	outline: none;
+	box-shadow: 0px 0px 1px rgba(255,255,255,1),
+				0px 0px 1px #2f7cc0;
 }
 
 
 .featured {
+	margin-top: 0px;
 	display:flex;
 	background-color: black;
-	height: auto;
-	background: linear-gradient(to bottom, #231f20 45%, #000 45%, #000  81%, #231f20 81%) no-repeat;
-
+	background: linear-gradient(to bottom, #231f20 53%, #000 53%, #000  81%, #231f20 81%) no-repeat;
+	outline: 1px solid #5a5657;
+	outline-offset: -10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .featured-left img{ 
 	content:"480x240px";
-	margin-left: 20px;
-	margin-bottom: 20px;
+	margin-top: 20px;
+	margin-bottom: 15px;
 }
 
 .featured-right {
- display: flex;
- flex-direction: column;
-
-margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	margin-top: 5px;
 }
 
 .featured-right h1 {
-	font-size: 20px;
-	color: #e5e5e5;
 	font-family: Georgia, Tahoma, 'serif';
+	font-size: 20px;
+	font-weight: normal;
+	color: #e5e5e5;
 	margin:0;
-	padding:0;
-		margin-bottom: 10px;
-		margin-left: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	margin-top:20px;
+
 }
 .featured-right p {
 	font-family: Georgia, Tahoma, 'serif';
@@ -197,7 +188,6 @@ margin: 0 auto;
 .featured-right a {
 	margin-left: auto;
 	margin-right: 25px;
-
 	color: #fcd05d;
 	text-decoration: none;
 }
@@ -212,28 +202,27 @@ margin: 0 auto;
 }
 
 .featured-right ul li {
-	outline:4px solid yellow;
-	outline-offset: 6px;
+	outline:1px solid #545454;
+	outline-offset: 5px;
 	background-color: #333333;
 	width: 90px;
 	display: block;
 	height: 60px;
-	margin-right:30px;
+	margin-right:20px;
 	border:1px solid #575757;
 	transition: 300ms linear;
 }
+/*
 .featured-right ul li:hover {
 	outline:4px solid darkblue;
 	transition: 300ms linear;
 }
+*/
 .homepage {
-	
 	display: flex;
 	justify-content: space-around;
-	
 	background-color: rgba(80,12,12,0);
 	padding-bottom: 10px;
-
 }
 .homepage .left-side {
 	display: flex;
@@ -245,18 +234,17 @@ margin: 0 auto;
 .left-side div:nth-child(1),.left-side div:nth-child(2)  {
 	height: 20px;
 }
-*/
+
 .news, .left-side, .left-side div {
 	border:0px solid green;
-
 }
 
+*/
 .homepage h1 {
 	margin-left: 20px;
 	font-size:16px;
 	font-family: Georgia, Tahoma, 'serif';
 	color:#aaa;
-	
 	border-bottom: 1px solid #aaa;	width:auto;
 	padding-bottom: 10px;
 	margin-right:0px;
@@ -265,7 +253,6 @@ margin: 0 auto;
 	margin-left: 20px;
 	outline: 1px solid #d7dbe0;
 	outline-offset: 5px;
-
 }
 
 .news a{
@@ -276,7 +263,6 @@ margin: 0 auto;
 	transition: 300ms linear;
 	margin-left: 20px;
 	line-height: 50px;
-
 }
 .news a:hover {
 	text-decoration: underline;
@@ -299,7 +285,6 @@ margin: 0 auto;
 	margin-right: 10px;
 }
 .news p {
-	
 	color: #ce4521;
 	margin: 0 auto;
 	margin-bottom: 5px;
@@ -310,27 +295,26 @@ margin: 0 auto;
 .news span {
 	color: #979797;
 	border: none;
-	
 	font-family: Georgia, Tahoma, 'serif';
 	font-size: 13px;
 }
-
 .news div img{
 	margin-right: 20px;
 	margin-left: 20px;
-
 }
-
-
+.link-news {
+	display: block;
+	border-top: 1px solid grey;
+	width:485px;
+	margin-top: 15px;
+}
 .homepage .right-side {
 	align-self: space-between;
-	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	margin-right: 20px;
 }
-
 .right-side a{
 	color: #ce4521;
 	font-family: Georgia, Tahoma, 'serif';
@@ -338,8 +322,6 @@ margin: 0 auto;
 	text-decoration: none;
 	transition: 300ms linear;
 	margin-left: 20px;
-	
-
 }
 .right-side a:hover {
 	text-decoration: underline;
@@ -347,8 +329,7 @@ margin: 0 auto;
 	color: #ceaa21;
 }
 .right-side img {
-margin-right: 10px;
-
+	margin-right: 10px;
 }
 .main-footer {
 	display:flex;
@@ -394,7 +375,11 @@ margin-right: 10px;
 	margin-left: 20px;
 	width:220px;
 	margin-top: 10px;
-} 
+}
+.main-footer .second-colum li:nth-child(4) {
+margin-bottom: 20px;
+}
+
 .main-footer .third-colum {
 	display: flex;	
 	width: 350px;
@@ -405,7 +390,6 @@ margin-right: 10px;
 	margin-top: 10px;
 	padding-left: 10px;
 	margin-left: 20px;
-	
 }
 .main-footer .third-colum input {
 	padding: 8px 0 10px 10px;
@@ -418,7 +402,6 @@ margin-right: 10px;
 }
 .main-footer .third-colum input:focus{
 	outline:none;
-
 }
 .main-footer .third-colum a {
 	padding:10px 20px;
@@ -438,6 +421,7 @@ margin-right: 10px;
 	margin-right: 5px;
 	border-radius: 50%;
 	background-color: white;
+	margin-left: 10px;
 }
 .copyright {
 	display: flex;
