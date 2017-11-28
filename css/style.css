@@ -1,5 +1,3 @@
-
-
 body {
 	background-color: black;
 	padding-left:20px;
@@ -240,23 +238,17 @@ header {
 	justify-content: space-around;
 	background-color: rgba(80,12,12,0);
 	padding-bottom: 10px;
+	outline: 2px solid rgba(80,12,12,0.8);
+	outline-offset: -2px;
 }
+
 .homepage .left-side {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	width: 50%;
 }
-/*
-.left-side div:nth-child(1),.left-side div:nth-child(2)  {
-	height: 20px;
-}
-
-.news, .left-side, .left-side div {
-	border:0px solid green;
-}
-
-*/
 .homepage h1 {
 	margin-left: 20px;
 	font-size:16px;
@@ -271,7 +263,6 @@ header {
 	outline: 1px solid #d7dbe0;
 	outline-offset: 5px;
 }
-
 .news a{
 	color: #ce4521;
 	font-family: Georgia, Tahoma, 'serif';
@@ -294,7 +285,6 @@ header {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-
 }
 .news h1 {
 	border-bottom: 1px solid grey;
@@ -331,6 +321,7 @@ header {
 	flex-direction: row;
 	justify-content: space-around;
 	margin-right: 20px;
+	width: 50%;
 }
 .right-side a{
 	color: #ce4521;
@@ -356,12 +347,6 @@ header {
 	border-top: 5px solid #ce4521;
 	height: 290px;
 	background-color: #231f20;
-}
-.main-footer>section {
-/*
-	outline: 5px solid yellow;
-	outline-offset: 2px;
-*/
 }
 .main-footer>section  h1 {
 	font-size:16px;
