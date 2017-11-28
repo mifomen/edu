@@ -107,7 +107,7 @@ header {
 .nav-menu span {
 	position: relative;
 	font-size: 0.8em;
-	opacity: 0;
+	display: none;
 	margin:0px;
 	top:-25px;
 	color:grey;
@@ -116,7 +116,7 @@ header {
 	color: #f6bd4c;
 }
 .nav-menu li:hover span {	
-	opacity:1;
+	display: block;
 }
 .sub-menu {
 	display: flex;
@@ -289,7 +289,7 @@ header {
 .news h1 {
 	border-bottom: 1px solid grey;
 	width:auto;
-	margin-right: 10px;
+	margin-left: 25px;
 }
 .news p {
 	color: #ce4521;
@@ -307,12 +307,12 @@ header {
 }
 .news div img{
 	margin-right: 20px;
-	margin-left: 20px;
+	margin-left: 35px;
 }
 .link-news {
 	display: block;
 	border-top: 1px solid grey;
-	width:485px;
+	margin-left: 20px;
 	margin-top: 15px;
 }
 .homepage .right-side {
@@ -320,7 +320,7 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	margin-right: 20px;
+	margin-right: 10px;
 	width: 50%;
 }
 .right-side a{
