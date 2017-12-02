@@ -10,7 +10,7 @@ body {
 	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAMAAAApB0NrAAAABlBMVEX///+pqalTpKl9AAAAAnRSTlMAGovxNEIAAAAdSURBVDjLY2AAAUaG4UYxDDsfjfp91O+jfqfE7wCzpQCw/dq+qQAAAABJRU5ErkJggg==");
 }
 
-header {
+.page-header {
 	display:flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -250,7 +250,7 @@ header {
 	transition: 300ms linear;
 }
 */
-.homepage {
+.homepage-content {
 	display: flex;
 	justify-content: space-around;
 	background-color: rgba(80,12,12,0);
@@ -259,14 +259,14 @@ header {
 	outline-offset: -2px;
 }
 
-.homepage .left-side {
+.homepage-content .left-side {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	flex-wrap: wrap;
 	width: 50%;
 }
-.homepage h1 {
+.homepage-content h1 {
 	margin-left: 20px;
 	font-size:16px;
 	font-family: Georgia, Tahoma, 'serif';
@@ -275,7 +275,7 @@ header {
 	padding-bottom: 10px;
 	margin-right:0px;
 }
-.homepage img {
+.homepage-content img {
 	margin-left: 20px;
 	outline: 1px solid #d7dbe0;
 	outline-offset: 5px;
@@ -332,7 +332,7 @@ header {
 	margin-left: 20px;
 	margin-top: 15px;
 }
-.homepage .right-side {
+.homepage-content .right-side {
 	align-self: space-between;
 	display: flex;
 	flex-direction: row;
@@ -356,7 +356,7 @@ header {
 .right-side img {
 	margin-right: 10px;
 }
-.main-footer {
+.page-footer {
 	display:flex;
 	flex-grow: row;
 	flex-wrap: wrap;
@@ -364,7 +364,7 @@ header {
 	border-top: 5px solid #ce4521;
 	background-color: #231f20;
 }
-.main-footer>section  h1 {
+.page-footer section  h1 {
 	font-size:16px;
 	font-family: Georgia, Tahoma, 'serif';
 	font-style: italic;
@@ -372,33 +372,41 @@ header {
 	width:100%;
 }
 
-.main-footer section ul, .main-footer section li {
+.page-footer section ul, .main-footer section li {
 	padding:0;
 	margin:0;
 	text-decoration: none;
 	list-style: none;
 }  
-.main-footer>section  a {
+.page-footer section  a {
 	font-size:81.25%;
 	font-family: Georgia, Tahoma, 'serif';
 	color:#979797;
 	text-decoration: none;
 
 }
-.main-footer>section a:hover {
+.page-footer section a:hover {
 	text-decoration: underline;
 }
 
-.main-footer .first-colum, .second-colum {
+.page-footer .first-colum, .second-colum {
 	margin-left: 2%;
 	width:22%;
-	margin-top: 1%;
 }
-.main-footer .second-colum li:nth-child(4) {
-	margin-bottom: 2%;
+.page-footer .third-colum {
+	margin-right:2%; 
+	width:40%;
 }
 
-.main-footer .third-colum {
+.page-footer .second-colum li:nth-child(4) {
+	margin-bottom: 4%;
+}
+/* for see block 
+.page-footer , .page-footer .first-colum, .second-colum, .third-colum {
+	border:2px solid green;
+} 
+*/
+.mpage-footer .third-colum {
 	display: flex;	
 	width: 40%;
 	flex-wrap: nowrap;
@@ -410,22 +418,23 @@ header {
 	margin-left: 2%;
 }
 
-.main-footer .third-colum a:hover {
+.page-footer .third-colum a:hover {
 	text-decoration: none;
 	color: #929292;
 }
 
-.main-footer .third-colum .circle svg {
+.page-footer .third-colum .circle svg {
 	width:32px;
 	border:3px solid white;
 	border-radius: 50%;
 	background-color:white;
+	margin-left:2%;
 }
-.main-footer .third-colum .circle svg:hover {
+.page-footer .third-colum .circle svg:hover {
 	border:3px solid darkorange;
 }
 
-.main-footer .third-colum input {
+.page-footer .third-colum input {
 	padding: 2.44827586206897% 2.44827586206897%;
 	font-size: 81.25%;
 	font-family: Georgia, Tahoma, 'serif';
@@ -436,12 +445,12 @@ header {
 	margin-right: 5%;
 	width: 40%;
 }
-.main-footer .third-colum input:focus{
+.page-footer .third-colum input:focus{
 	box-shadow: 0px 0px 1px rgba(255,255,255,1),
 				0px 0px 1px #2f7cc0;
 	outline:transparent;
 }
-.main-footer .third-colum a {
+.page-footer .third-colum a {
 	background-color:#fff;
 	border-radius: 7px;
 	padding: 2.44827586206897% 2.44827586206897%;
